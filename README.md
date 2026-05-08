@@ -340,17 +340,21 @@ If the model makes the deliverable worse during the conversation, please do the 
 
 A productive turn is one where the user clearly looked at what Model produced and tried to improve it. The prompt must describe the issue and/or give specific instructions for how to fix it. It can include one change or multiple changes.
 
+**Format:** `[What is wrong] + [How to fix it]`
+> Example: "The font on slide 4 is too small to read, increase the body text to at least 18pt."
+> Example: "The chart labels on page 2 are overlapping. Switch to a horizontal bar chart."
+
 **Exceptions:**
 - If Model makes a mistake, the turn still counts toward the 20 total but is not penalized as long as the user responds appropriately.
 - Re-submitting a prompt after an error message, no response, or stall is not penalized.
 
 #### Unproductive Turns
 
+- Submitting a useless prompt that requests new content or additions when the current deliverable has unaddressed flaws that should be fixed first.
 - Repeating the same prompt after a valid output without changing the approach.
 - Giving no direction, such as "Fix it," "Please revise," or "Make it better."
 - Spending more than 3 consecutive turns troubleshooting an issue where Model does not produce an output.
 - Asking for the deliverable when it has already been generated and Model already said where the file was saved.
-- Ignoring an obvious file failure, such as continuing to ask for fixes when a PDF is corrupted.
 
 **Exceptions:**
 - A turn with no actionable information (e.g., "Fix it" or "It's still broken") is never acceptable.
