@@ -341,6 +341,7 @@ If the model makes the deliverable worse during the conversation, please do the 
 A productive turn is one where the user clearly looked at what Model produced and tried to improve it. The prompt must describe the issue and/or give specific instructions for how to fix it. It can include one change or multiple changes.
 
 **Format:** `[What is wrong] + [How to fix it]`
+
 > Example: "The font on slide 4 is too small to read, increase the body text to at least 18pt."
 > Example: "The chart labels on page 2 are overlapping. Switch to a horizontal bar chart."
 
